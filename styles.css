@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('./Assets/padaria.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 0% 10%;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden; 
+}
+
+header {
+    height: 25vh;
+    line-height: 25vh;
+    position: relative;
+}
+
+#logo-image {
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slogan {
+    height: 8vh;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 5vh;
+    line-height: 8vh;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+main {
+    height: 59vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.container-left {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.link-button {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 10vh;
+    margin-bottom: 5vh;
+    cursor: pointer;
+    border-radius: 5vh;
+    border: none;
+    color: #FFFFFF;
+    font-size: 3vh;
+    line-height: 10vh;
+    font-weight: 400;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 100%);
+    list-style: none;
+}
+
+li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+    background: rgb(54, 50, 50);
+    background: linear-gradient(90deg, rgba(54, 50, 50,1) 0%, rgba(54, 50, 50,0.6) 100%);
+}
+
+li:active {
+    background: rgb(80, 77, 77);
+    background: linear-gradient(90deg, rgba(54, 50, 50,0.7) 0%, rgba(54, 50, 50,0.3) 100%);
+}
+
+a {
+    width: 70%;
+    height: 60px;
+    border-radius: 30px;
+}
+
+#adress {
+    display: none;
+}
+
+.container-right {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50vh;
+    border: 2px solid #000;
+}
+
+footer {
+    height: 8vh;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    position: relative;
+}
+
+.center-footer {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.5vh;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 850px) {
+    li {
+        width: 90%;
+        height: 8vh;
+        line-height: 8vh;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-height: 715px) {
+    h1 {
+        font-size: 3vh;
+        line-height: normal;   
+    }
+
+    li {
+        font-size: 1.5vh;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 450px) { 
+    header {
+        height: 20vh;
+    }
+
+    #logo-image {
+        height: auto;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+    }
+
+    main {
+        height: 64vh;
+    }
+
+    h1 {
+        font-size: 3vh;
+        line-height: normal;   
+    }
+    
+    .container-right {
+        display: none;
+    }
+
+    .container-left {
+        width: 100%;
+    }
+
+    li {
+        font-size: 2vh;
+    }
+
+    #adress {
+        display: block;
+    }
+}
+
